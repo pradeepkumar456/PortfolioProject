@@ -1,0 +1,217 @@
+<% layout("/layout/boilerplate") %> 
+
+<style>
+  body {
+      background-color: #f8f9fa;
+  }
+  .education-section {
+      padding: 60px 0;
+  }
+  .edu-card {
+      transition: 0.3s;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      background: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .edu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+</style>
+<body>
+  <br />
+  <!-- Main hero banner -->
+  <div class="home1 card shadow-lg p-4">
+    <section id="home">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="headings col-4">
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3 class="greet-heading">Hello, I'm</h3>
+          <h1 class="my-heading">Pradeep Kumar</h1>
+          <span id="passion">Software Engineer</span>
+          <br />
+          <h4 class="sub-heading">
+            I am freasher and seeking foran an internship.
+          </h4>
+
+          <br />
+          <div class="intro-buttons">
+            <div class="intro-button1">
+              <form method="get" action="/hireMe">
+                <button id="hireme" class="btn common-btn">Hire Me</button>
+              </form>
+            </div>
+            <div class="intro-button">
+              <form method="get" action="/getresume">
+                <button class="btn ghost-btn">Get Resume</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 imagediv" style="margin-right: 4rem !important">
+          <a href="/about">
+            <img class="image" src="/images/adiPhoto.jpeg" alt="adi" />
+          </a>
+        </div>
+        <div class="col-2">
+        </div>
+      </form>
+      </div>
+    </section>
+  </div>
+
+  <hr />
+
+  <!-- Services Section -->
+        <section class="education-section text-center services" id="services">
+          <div class="container">
+              <h2 class="mb-5 fw-bold">My Education</h2>
+              <div class="row justify-content-center">
+  
+                  <div class="col-md-5 mb-4">
+                      <div class="edu-card">
+                          <i class="fa fa-graduation-cap fa-3x text-primary"></i>
+                          <h4 class="mt-3">MCA - Master of Computer Applications</h4>
+                          <p>KCMT College | 2023 - 2025</p>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-5 mb-4">
+                      <div class="edu-card">
+                          <i class="fa fa-university fa-3x text-success"></i>
+                          <h4 class="mt-3">B.Sc - Bachelor of Science</h4>
+                          <p>MJPRU University | 2018 - 2021</p>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-5 mb-4">
+                      <div class="edu-card">
+                          <i class="fa fa-school fa-3x text-danger"></i>
+                          <h4 class="mt-3">Higher Secondary (12th)</h4>
+                          <p>Alapsankhayk Aqsa Public Inter College  | 2018</p>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-5 mb-4">
+                      <div class="edu-card">
+                          <i class="fa fa-book fa-3x text-warning"></i>
+                          <h4 class="mt-3">Matriculation (10th)</h4>
+                          <p> K.K.S.H.S.School | 2016</p>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <h2 style="text-align: center;">About Me </h2>
+        <div class="container">
+            <div class="row align-items-center"> 
+                <div class="col-md-5">
+                    <img style="height: 20rem; width: 20rem;" src="/images/dashboard.jpg" alt="About Me" class="about-img img-fluid">
+                </div>
+
+                <div class="col-md-7 about-content mb-3">
+                    <p>Hello! I'm <b>Pradeep Kumar</b>, an MCA student at KCMT College with a passion for web development. I specialize in creating dynamic and responsive websites using HTML, CSS, JavaScript, Bootstrap, Node.js, Express, and MongoDB.</p>
+                    <p>I have developed several projects, including a hotel booking website and a property booking website using modern technologies. I am always eager to learn and explore new trends in web development.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  <hr />
+  <br />
+  <!-- Contact me section -->
+  <section class="contact" id="contact">
+    <div class="contact-heading">
+      <h1 class="my-heading text-center">For Any Further Query</h1>
+    </div>
+    <div class="contact-content">
+      <div class="contact-form-container">
+        <h1 class="greet-heading">Get In Touch</h1>
+
+        <!-- For review  -->
+        <form
+          class="contact-form needs-validation"
+          method="post"
+          action="/review?_method=post"
+          novalidate
+        >
+          <div>
+            <input
+              class="form-controls"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <div class="valid-feedback">wonderful</div>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+
+          <div>
+          <input
+            class="form-controls"
+            type="text"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <div class="invalid-feedback">Please enter your eamil.</div>
+        </div>
+        <div>
+          <input
+            class="form-controls"
+            type="text"
+            name="phoneNo"
+            placeholder="Your Phone"
+            required
+          />
+          <div class="invalid-feedback">Enter 10 digit  phoneNo.</div>
+        </div>
+
+      <div>
+          <textarea
+            class="form-controls"
+            placeholder="Write your message"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            name="message"
+            required >
+                      </textarea>
+                    </div>
+          <input
+            class="form-btn btn common-btn"
+            type="submit"
+            value="Send Message"
+          />
+        </form>
+      </div>
+      <div class="contact-details">
+        <h1 class="greet-heading">My Contact Details</h1>
+        <div class="details">
+          <h5 class="contact-heading">EMAIL</h5>
+          <p class="contact-text">adigangwar1@gmail.com</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">PHONE</h5>
+          <p class="contact-text">+917452861837</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">ADDRESS</h5>
+          <p class="contact-text">Green Park , Bareilly</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

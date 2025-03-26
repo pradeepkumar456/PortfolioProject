@@ -1,0 +1,13 @@
+<% layout("/layout/boilerplate") %> 
+<body>
+   <% for(let review of allReview) { %> 
+  <p>  <%= review.name %></p> 
+  <p>  <%= review.phoneNo  %></p> 
+  <p>  <%= review.email %></p> 
+  <p>  <%= review.message %></p> 
+   <% } %>
+   <!-- <form method="post" action="/review?_method=post">
+      <button class="btn btn-danger">Add a review</button>
+   </form> -->
+   
+</body>
